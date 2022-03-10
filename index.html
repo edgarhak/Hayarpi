@@ -41,17 +41,19 @@
   <main>
     <div class="py-5 text-center">
       <!-- <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
-      <h2>ОПРЕДЕЛЕНИЕ РИСКА ГЕСТАЦИОННОГО САХАРНОГО ДИАБЕТА</h2>
-      <p class="lead">Риск гестационного сахарного диабета (Y) = -13,404 + 0,047 х Окружность талии (см) + 1,876 х Глюкоза (моль/л) + 0,009 х Ферритин (нг/мл)</p>
+      <h2 class="text-info">ОПРЕДЕЛЕНИЕ РИСКА ГЕСТАЦИОННОГО САХАРНОГО ДИАБЕТА</h2>
+      <hr class="my-4">
+      <p class="lead">Риск гестационного сахарного диабета<br />(Y) = -13,404 + 0,047 х Окружность талии (см) + 1,876 х Глюкоза (ммоль/л) + 0,009 х Ферритин (нг/мл)</p>
+      <hr class="my-4">
     </div>
 
     <div class="row g-5">
       <div class="col-lg-12">
-        <h4 class="mb-3">Факторы риска</h4>
+        <h4 class="mb-3 text-info">Факторы риска</h4>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-4">
-              <label for="okTalii" class="form-label">Окружность талии (см)</label>
+              <label for="okTalii" class="form-label"><b>Окружность талии</b><br />(см)</label>
               <input type="number" class="form-control" id="okTalii" placeholder="" value="" step="any" required>
               <div class="invalid-feedback">
                 Окружность талии обязательное поле.
@@ -59,7 +61,7 @@
             </div>
 
             <div class="col-4">
-              <label for="gluk" class="form-label">Глюкоза (ммоль/л)</label>
+              <label for="gluk" class="form-label"><b>Глюкоза</b><br />(ммоль/л)</label>
               <input type="number" class="form-control" id="gluk" placeholder="" value="" step="any" required>
               <div class="invalid-feedback">
                 Глюкоза обязательное поле.
@@ -67,7 +69,7 @@
             </div>
 
             <div class="col-4">
-              <label for="fer" class="form-label">Ферритин (нг/мл)</label>
+              <label for="fer" class="form-label"><b>Ферритин</b><br />(нг/мл)</label>
               <input type="number" class="form-control" id="fer" placeholder="" value="" step="any" required>
               <div class="invalid-feedback">
                 Ферритин обязательное поле.
@@ -86,7 +88,7 @@
 
           <hr id="line" class="my-4 d-none ">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">ОПРЕДЕЛИТЬ РИСК</button>
+          <button class="w-100 btn bg-secondary text-white btn-lg" type="submit">ОПРЕДЕЛИТЬ РИСК</button>
         </form>
       </div>
     </div>

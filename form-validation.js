@@ -39,7 +39,7 @@
         else {
           var y = -13.404 + 0.047 * okTalii.value + 1.876 * gluk.value + 0.009 * fer.value;
 
-          if(y > 0.197) {
+          if(y >= 0.197) {
             show(risk);
             show(line);
           } else {
