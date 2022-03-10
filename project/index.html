@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>ОПРЕДЕЛЕНИЕ РИСКА ГЕСТАЦИОННОГО САХАРНОГО ДИАБЕТА</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <!-- <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+      <h2>ОПРЕДЕЛЕНИЕ РИСКА ГЕСТАЦИОННОГО САХАРНОГО ДИАБЕТА</h2>
+      <p class="lead">Риск гестационного сахарного диабета (Y) = -13,404 + 0,047 х Окружность талии (см) + 1,876 х Глюкоза (моль/л) + 0,009 х Ферритин (нг/мл)</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-12">
+        <h4 class="mb-3">Факторы риска</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-4">
+              <label for="okTalii" class="form-label">Окружность талии (см)</label>
+              <input type="number" class="form-control" id="okTalii" placeholder="" value="" step="any" required>
+              <div class="invalid-feedback">
+                Окружность талии обязательное поле.
+              </div>
+            </div>
+
+            <div class="col-4">
+              <label for="gluk" class="form-label">Глюкоза (ммоль/л)</label>
+              <input type="number" class="form-control" id="gluk" placeholder="" value="" step="any" required>
+              <div class="invalid-feedback">
+                Глюкоза обязательное поле.
+              </div>
+            </div>
+
+            <div class="col-4">
+              <label for="fer" class="form-label">Ферритин (нг/мл)</label>
+              <input type="number" class="form-control" id="fer" placeholder="" value="" step="any" required>
+              <div class="invalid-feedback">
+                Ферритин обязательное поле.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div id="norisk" class="alert alert-success d-none" role="alert">
+            Риск <b>НИЗКИЙ</b>
+          </div>
+          <div id="risk" class="alert alert-danger d-none" role="alert">
+            Риск <b>ВЫСОКИЙ</b>
+          </div>
+
+          <hr id="line" class="my-4 d-none ">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">ОПРЕДЕЛИТЬ РИСК</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022 Айарпи Торосян</p>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
